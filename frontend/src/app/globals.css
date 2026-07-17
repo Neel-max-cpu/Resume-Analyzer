@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins);
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(250, 204, 21, 1);
+  }
+}
+
+.glow {
+  animation: pulse-glow 1.5s infinite;
+}
+
+.main-background {
+  @apply bg-[#f8fafc];
+}
+
+.nav-color {
+  @apply bg-[#f8f9ff];
+}
+
+.primary-text {
+  @apply text-[#0F172A];
+}
+
+.secondary-text {
+  @apply text-[#0f172a];
+}
+
+/* .text-area{
+  @apply placeholder:text-slate-400 placeholder:text-base placeholder:font-medium active:border-none text-base font-medium
+} */
+
+.text-area {
+  @apply
+  w-full h-full resize-none border-0 rounded-lg 
+  focus-visible:ring-0 focus-visible:ring-offset-0
+  focus-visible:outline-none
+  placeholder:text-slate-400 placeholder:text-base placeholder:font-medium
+  text-base font-medium
+  overflow-y-auto;
+}
