@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <header className="border-b-2 border-slate-200 shadow-md nav-color">
+    <header className="border-b-2 border-slate-200 shadow-md nav-color mb-10">
       <div className="flex max-w-xl px-2 py-5 gap-x-10">
         <h1 className="text-xl font-bold tracking-tight primary-text">
           Resume AI Analyzer

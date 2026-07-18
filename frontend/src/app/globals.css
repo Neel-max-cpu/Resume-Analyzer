@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #f8fafc;
     --foreground: #ededed;
   }
 }
@@ -60,11 +60,23 @@ body {
 } */
 
 .text-area {
-  @apply
-  w-full h-full resize-none border-0 rounded-lg 
+  @apply w-full h-full resize-none border-0 rounded-lg 
   focus-visible:ring-0 focus-visible:ring-offset-0
   focus-visible:outline-none
   placeholder:text-slate-400 placeholder:text-base placeholder:font-medium
   text-base font-medium
   overflow-y-auto;
+}
+
+.line1 {
+  @apply relative w-fit block 
+    after:block after:content-[''] 
+    after:absolute after:h-[3px] after:bg-yellow-300 after:w-full                   
+    after:scale-x-0 hover:after:scale-x-100 
+    after:origin-right hover:after:origin-left 
+    after:transition-transform after:duration-300 hover:cursor-pointer;
+}
+
+.skill{
+  @apply p-4 border border-gray-300 bg-white rounded-lg
 }

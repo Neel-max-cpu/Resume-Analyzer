@@ -16,9 +16,9 @@ const Home = () => {
 
     return (
         <main className="min-h-screen main-background">
-            <Navbar />
+            {/* <Navbar /> */}
 
-            <div className="container mt-10 mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* header */}
                 <div className="flex flex-col justify-center items-center">
                     <h1 className="text-6xl justify-center text-center primary-text font-semibold">Talent Evaluation</h1>
