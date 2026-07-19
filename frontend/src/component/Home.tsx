@@ -18,7 +18,6 @@ const Home = () => {
     const router = useRouter();
     const dispatch = useDispatch<AppDispatch>();
 
-    dispatch(setLoading(true));
     const {
         jobDescription,
         loading,
@@ -52,8 +51,8 @@ const Home = () => {
             anlysePdf(file, jobDescription, mode),
             {
                 loading: "Analyzing...",
-                success: "Completed!",
-                error: "Upload failed. Please try again.",
+                success: "Completed!",                
+                error: (err) => err?.message || "Upload failed. Please try again.",
             }
         )
             .then((res: any) => {
@@ -137,7 +136,7 @@ const Home = () => {
                 <div className="flex flex-col justify-center items-center">
                     <h1 className="text-6xl justify-center text-center primary-text font-semibold">Talent Evaluation</h1>
                     {/* toggle buttons */}
-                    <div className="flex items-center justify-center w-1/2 bg-blue-100 px-4 py-3 text-gray-700 font-semibold mt-4 rounded-lg border-none gap-x-4">
+                    <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center w-full sm:w-2/3 lg:w-1/2 mx-auto bg-blue-100 px-2 py-2 sm:py-3 text-gray-700 font-semibold mt-4 rounded-lg gap-2 sm:gap-x-4">
                         {/* button 1 - assignment1 */}
                         <button
                             disabled={loading}
@@ -277,7 +276,7 @@ const Home = () => {
                                 ? "bg-gray-400 cursor-not-allowed"
                                 : "bg-[#0058be] hover:bg-[#00499f] hover:-translate-y-1 hover:cursor-pointer"
                             }`}
-                        >
+                    >
                         <LayoutDashboard className="w-4 h-4 text-white" strokeWidth={2} />
                         <span
                             className="font-semibold text-2xl text-white"
