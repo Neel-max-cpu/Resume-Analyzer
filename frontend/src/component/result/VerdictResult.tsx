@@ -27,11 +27,11 @@ const VerdictResult = () => {
   const data = result?.verdict;
   // console.log("data", data);
 
-  // useEffect(() => {
-  //   if (!data) {
-  //     router.replace("/");
-  //   }
-  // }, [data]);
+  useEffect(() => {
+    if (!data) {
+      router.replace("/");
+    }
+  }, [data]);
 
   const verdict = data?.verdict;
   const badge = data?.badge;
