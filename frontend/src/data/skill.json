@@ -1,0 +1,358 @@
+{
+    "success": true,
+    "mode": "skill-gap",
+    "skills": {
+        "resumeSummary": "Software Engineer with 1+ year of experience developing scalable backend services and full-stack applications, skilled in Java, Spring Boot, React, Next.js, Node.js, and SQL, with expertise in microservices, cloud architectures, and RAG-based AI systems.",
+        "jdSummary": "This role involves building and evolving AI-powered cloud services and platforms, focusing on end-to-end ownership, cloud-to-edge capabilities, and AI-enabled engineering systems within a platform-first, outcome-driven DevOps culture, emphasizing distributed systems, cloud platforms, and applied AI.",
+        "resumeSkills": [
+            "Java",
+            "JavaScript",
+            "TypeScript",
+            "Python",
+            "C++",
+            "SQL",
+            "React",
+            "Next.js",
+            "Angular",
+            "Tailwind CSS",
+            "HTML/CSS",
+            "Spring Boot",
+            "Node.js",
+            "Express.js",
+            "FastAPI",
+            "REST APIs",
+            "Microservices",
+            "Monolithic Architecture",
+            "Redis",
+            "MS SQL",
+            "MySQL",
+            "PostgreSQL",
+            "MongoDB",
+            "ChromaDB",
+            "Stored Procedures",
+            "Query Optimization",
+            "Git",
+            "GitHub",
+            "Docker",
+            "RBAC",
+            "JWT",
+            "Render",
+            "Vercel",
+            "Cloud Architectures",
+            "RAG (Retrieval Augmented Generation)",
+            "Embeddings",
+            "NLP (Natural Language Processing)",
+            "Google Gemini",
+            "Full-Stack Development",
+            "Testing",
+            "Solutions Design",
+            "Razorpay",
+            "Zustand"
+        ],
+        "jdSkills": [
+            {
+                "name": "C#",
+                "important": true
+            },
+            {
+                "name": "C++",
+                "important": true
+            },
+            {
+                "name": "Go",
+                "important": true
+            },
+            {
+                "name": "Java",
+                "important": true
+            },
+            {
+                "name": "Python",
+                "important": true
+            },
+            {
+                "name": "Software Engineering Fundamentals",
+                "important": true
+            },
+            {
+                "name": "Data Structures",
+                "important": true
+            },
+            {
+                "name": "Linux",
+                "important": true
+            },
+            {
+                "name": "Open Source",
+                "important": true
+            },
+            {
+                "name": "Containers",
+                "important": true
+            },
+            {
+                "name": "Docker",
+                "important": true
+            },
+            {
+                "name": "Kubernetes",
+                "important": true
+            },
+            {
+                "name": "Cloud Infrastructure",
+                "important": true
+            },
+            {
+                "name": "Azure",
+                "important": true
+            },
+            {
+                "name": "AWS",
+                "important": true
+            },
+            {
+                "name": "SRE (Site Reliability Engineering)",
+                "important": true
+            },
+            {
+                "name": "AI-assisted Development",
+                "important": true
+            },
+            {
+                "name": "Data-driven Engineering",
+                "important": true
+            },
+            {
+                "name": "Azure Resource Providers",
+                "important": true
+            },
+            {
+                "name": "Platform Extensibility",
+                "important": true
+            },
+            {
+                "name": "Security",
+                "important": true
+            },
+            {
+                "name": "Compliance",
+                "important": true
+            },
+            {
+                "name": "Responsible AI",
+                "important": true
+            },
+            {
+                "name": "Privacy",
+                "important": true
+            },
+            {
+                "name": "Reliability",
+                "important": true
+            },
+            {
+                "name": "DevOps",
+                "important": false
+            },
+            {
+                "name": "Distributed Systems",
+                "important": false
+            },
+            {
+                "name": "Cloud Platforms",
+                "important": false
+            },
+            {
+                "name": "Applied AI",
+                "important": false
+            },
+            {
+                "name": "AI Integration",
+                "important": false
+            },
+            {
+                "name": "AI Engineering Systems",
+                "important": false
+            },
+            {
+                "name": "AI Workloads",
+                "important": false
+            },
+            {
+                "name": "Data Plane Integrations",
+                "important": false
+            },
+            {
+                "name": "Portal Development",
+                "important": false
+            },
+            {
+                "name": "Application Management",
+                "important": false
+            },
+            {
+                "name": "AI Platforms",
+                "important": false
+            },
+            {
+                "name": "Cloud Services",
+                "important": false
+            }
+        ]
+    },
+    "comparison": {
+        "matchedSkills": [
+            {
+                "name": "C++",
+                "important": true
+            },
+            {
+                "name": "Java",
+                "important": true
+            },
+            {
+                "name": "Python",
+                "important": true
+            },
+            {
+                "name": "Docker",
+                "important": true
+            }
+        ],
+        "missingSkills": [
+            {
+                "name": "C#",
+                "important": true
+            },
+            {
+                "name": "Go",
+                "important": true
+            },
+            {
+                "name": "Software Engineering Fundamentals",
+                "important": true
+            },
+            {
+                "name": "Data Structures",
+                "important": true
+            },
+            {
+                "name": "Linux",
+                "important": true
+            },
+            {
+                "name": "Open Source",
+                "important": true
+            },
+            {
+                "name": "Containers",
+                "important": true
+            },
+            {
+                "name": "Kubernetes",
+                "important": true
+            },
+            {
+                "name": "Cloud Infrastructure",
+                "important": true
+            },
+            {
+                "name": "Azure",
+                "important": true
+            },
+            {
+                "name": "AWS",
+                "important": true
+            },
+            {
+                "name": "SRE (Site Reliability Engineering)",
+                "important": true
+            },
+            {
+                "name": "AI-assisted Development",
+                "important": true
+            },
+            {
+                "name": "Data-driven Engineering",
+                "important": true
+            },
+            {
+                "name": "Azure Resource Providers",
+                "important": true
+            },
+            {
+                "name": "Platform Extensibility",
+                "important": true
+            },
+            {
+                "name": "Security",
+                "important": true
+            },
+            {
+                "name": "Compliance",
+                "important": true
+            },
+            {
+                "name": "Responsible AI",
+                "important": true
+            },
+            {
+                "name": "Privacy",
+                "important": true
+            },
+            {
+                "name": "Reliability",
+                "important": true
+            },
+            {
+                "name": "DevOps",
+                "important": false
+            },
+            {
+                "name": "Distributed Systems",
+                "important": false
+            },
+            {
+                "name": "Cloud Platforms",
+                "important": false
+            },
+            {
+                "name": "Applied AI",
+                "important": false
+            },
+            {
+                "name": "AI Integration",
+                "important": false
+            },
+            {
+                "name": "AI Engineering Systems",
+                "important": false
+            },
+            {
+                "name": "AI Workloads",
+                "important": false
+            },
+            {
+                "name": "Data Plane Integrations",
+                "important": false
+            },
+            {
+                "name": "Portal Development",
+                "important": false
+            },
+            {
+                "name": "Application Management",
+                "important": false
+            },
+            {
+                "name": "AI Platforms",
+                "important": false
+            },
+            {
+                "name": "Cloud Services",
+                "important": false
+            }
+        ],
+        "matchPercentage": 11
+    }
+}

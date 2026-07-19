@@ -1,0 +1,185 @@
+{
+    "success": true,
+    "mode": "verdict",
+    "skills": {
+        "resumeSummary": "Software Engineer with 1+ year of experience developing scalable backend services and full-stack applications, skilled in Java, Spring Boot, React, Next.js, Node.js, and SQL, with strong expertise in AI/ML integration and cloud deployment.",
+        "jdSummary": "The role involves building and evolving AI-powered cloud services and platforms, focusing on end-to-end ownership from architecture to deployment, within a platform-first engineering organization emphasizing DevOps, AI-native engineering, and enterprise-grade trust.",
+        "resumeSkills": [
+            "Java",
+            "Spring Boot",
+            "React",
+            "Next.js",
+            "Node.js",
+            "SQL",
+            "Microservices",
+            "REST APIs",
+            "Python",
+            "Gemini",
+            "ChromaDB",
+            "FastAPI",
+            "Docker",
+            "Render",
+            "Vercel",
+            "Tailwind CSS",
+            "TypeScript",
+            "JavaScript",
+            "C++",
+            "Angular",
+            "HTML/CSS",
+            "Express.js",
+            "Monolithic Architecture",
+            "Redis",
+            "MongoDB",
+            "Git/GitHub",
+            "RBAC",
+            "JWT",
+            "Cloud Architectures",
+            "Full-Stack Development",
+            "Testing",
+            "Solutions Design",
+            "Zustand",
+            "API Integration"
+        ],
+        "jdSkills": [
+            {
+                "name": "AI",
+                "important": true
+            },
+            {
+                "name": "Cloud Services",
+                "important": true
+            },
+            {
+                "name": "Azure",
+                "important": true
+            },
+            {
+                "name": "AWS",
+                "important": true
+            },
+            {
+                "name": "Azure Resource Providers",
+                "important": true
+            },
+            {
+                "name": "Data Plane Integrations",
+                "important": true
+            },
+            {
+                "name": "C#",
+                "important": true
+            },
+            {
+                "name": "C++",
+                "important": true
+            },
+            {
+                "name": "Go",
+                "important": true
+            },
+            {
+                "name": "Java",
+                "important": true
+            },
+            {
+                "name": "Python",
+                "important": true
+            },
+            {
+                "name": "Software Engineering Fundamentals",
+                "important": true
+            },
+            {
+                "name": "Data Structures",
+                "important": true
+            },
+            {
+                "name": "DevOps",
+                "important": true
+            },
+            {
+                "name": "Distributed Systems",
+                "important": true
+            },
+            {
+                "name": "Linux",
+                "important": true
+            },
+            {
+                "name": "Containers",
+                "important": true
+            },
+            {
+                "name": "Docker",
+                "important": true
+            },
+            {
+                "name": "Kubernetes",
+                "important": true
+            },
+            {
+                "name": "Site Reliability Engineering (SRE)",
+                "important": true
+            },
+            {
+                "name": "Platform Extensibility",
+                "important": true
+            },
+            {
+                "name": "Security",
+                "important": true
+            },
+            {
+                "name": "Compliance",
+                "important": true
+            },
+            {
+                "name": "Data-driven Engineering",
+                "important": true
+            }
+        ],
+        "yourThoughts": "The candidate is a strong match due to significant experience in Java, Python, Microservices, AI integration, and Docker, which directly aligns with the role's focus on AI-powered cloud services and platforms.",
+        "yourSuggestion": "The candidate should focus on gaining more direct experience with Azure and Kubernetes, as well as deepening their understanding of SRE practices and enterprise-level compliance within cloud environments to better align with the preferred qualifications."
+    },
+    "verdict": {
+        "verdict": "Not Yet",
+        "badge": "NOT RECOMMENDED",
+        "summary": "The candidate possesses a limited set of core programming and containerization skills but lacks critical foundational engineering knowledge and essential platform, cloud, and DevOps expertise required for the role.",
+        "profileContext": "With only 17% of required skills matched, the candidate demonstrates proficiency in C++, Java, Python, and Docker. However, significant gaps exist in fundamental software engineering, data structures, cloud platforms like Azure and AWS, DevOps practices, and distributed systems, making them unsuitable for the current opening.",
+        "currentJobRole": "Software Developer",
+        "breakdown": [
+            {
+                "title": "Core Programming & Containerization",
+                "percentage": 17,
+                "color": "orange"
+            },
+            {
+                "title": "Foundational Engineering Knowledge",
+                "percentage": 0,
+                "color": "red"
+            },
+            {
+                "title": "Cloud, DevOps & Advanced Platforms",
+                "percentage": 0,
+                "color": "red"
+            }
+        ],
+        "insights": [
+            {
+                "type": "positive",
+                "title": "Proficiency in Core Languages and Docker",
+                "description": "The candidate demonstrates a solid foundation in C++, Java, Python, and practical experience with Docker, which are valuable general programming and containerization skills."
+            },
+            {
+                "type": "warning",
+                "title": "Significant Gaps in Foundational Engineering",
+                "description": "Critical missing skills include Software Engineering Fundamentals, Data Structures, Distributed Systems, and Linux, which are essential for any advanced software development role."
+            },
+            {
+                "type": "negative",
+                "title": "Lack of Cloud, DevOps, and Specialized Platform Expertise",
+                "description": "The candidate lacks extensive experience in key areas such as AI, Cloud Services (Azure, AWS), DevOps practices, Kubernetes, SRE, security, and data-driven engineering, which are vital for modern infrastructure and development roles."
+            }
+        ]
+    }
+}
