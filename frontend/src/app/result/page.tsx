@@ -2,19 +2,20 @@
 import SkillGapResult from '@/component/result/SkillGapResult';
 import VerdictResult from '@/component/result/VerdictResult';
 import { useSearchParams } from 'next/navigation';
-import React from 'react'
+import React, { Suspense } from 'react'
 
-const Result = () => {
+function ResultContent() {
     const searchParams = useSearchParams();
-    const mode  = searchParams.get('mode');
-  return (
-        <>
-            {mode==='skill-gap' 
-                ? <SkillGapResult/>
-                : <VerdictResult/>
-            }
-        </>
-  )
+    const mode = searchParams.get('mode');
+
+    return mode === 'skill-gap' ? <SkillGapResult /> : <VerdictResult />;
 }
 
-export default Result
+
+export default function Result() {
+    return (
+        <Suspense fallback={null}>
+            <ResultContent />
+        </Suspense>
+    );
+}
