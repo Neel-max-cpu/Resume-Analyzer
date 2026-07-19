@@ -1,6 +1,6 @@
-# ✨ Grid Game✨
+# ✨ Resume Analyzer✨
 
-## Deployed Link  -> [Link]() ⭐
+## Deployed Link  -> [Link](https://resume-analyzer-ftfs.vercel.app/) ⭐
 
 ## Table of Contents
 - [Technologies Used](#technologies-used)
