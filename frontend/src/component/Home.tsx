@@ -18,7 +18,8 @@ const Home = () => {
     const router = useRouter();
     const dispatch = useDispatch<AppDispatch>();
 
-    const {        
+    dispatch(setLoading(true));
+    const {
         jobDescription,
         loading,
         mode
@@ -46,7 +47,7 @@ const Home = () => {
         }
 
         dispatch(setLoading(true));
-        dispatch(clearResult());        
+        dispatch(clearResult());
         await toast.promise(
             anlysePdf(file, jobDescription, mode),
             {
@@ -57,8 +58,8 @@ const Home = () => {
         )
             .then((res: any) => {
                 // console.log("res", res);
-                dispatch(setJobDescription("")); 
-                dispatch(setResult(res));   
+                dispatch(setJobDescription(""));
+                dispatch(setResult(res));
                 dispatch(setResumeName(file?.name));
                 setTimeout(() => {
                     // with query params --
@@ -271,12 +272,12 @@ const Home = () => {
                     <button
                         onClick={handleUpload}
                         disabled={loading}
-                        className={`
-                            hover:cursor-pointer hover:-translate-y-2 hover:transition transition-all duration-300 ease-in-out flex items-center gap-x-3 bg-[#0058be] hover:bg-[#00499f] py-4 px-10 rounded-xl shadow-lg  
-                            ${loading ? "bg-gray-400 cursor-not-allowed" :
-                                "bg-[#0058be] hover:bg-[#00499f] hover:-translate-y-1"}`
-                        }
-                    >
+                        className={`flex items-center gap-x-3 py-4 px-10 rounded-xl shadow-lg transition-all duration-300 ease-in-out
+                            ${loading
+                                ? "bg-gray-400 cursor-not-allowed"
+                                : "bg-[#0058be] hover:bg-[#00499f] hover:-translate-y-1 hover:cursor-pointer"
+                            }`}
+                        >
                         <LayoutDashboard className="w-4 h-4 text-white" strokeWidth={2} />
                         <span
                             className="font-semibold text-2xl text-white"

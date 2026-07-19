@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Talent Evaluation Frontend
 
-## Getting Started
+A modern Next.js application that analyzes a candidate's resume against a job description using AI.
 
-First, run the development server:
+## Features
+
+- Upload Resume (PDF)
+- Paste Job Description
+- AI-powered Skill Gap Analysis
+- AI-powered Candidate Verdict
+- Interactive Match Percentage Chart
+- Highlighted Matched & Missing Skills
+- Critical Skill Indicators
+- Responsive UI built with Tailwind CSS & Shadcn UI
+
+---
+
+## Tech Stack
+
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+- Redux Toolkit
+- Axios
+- Recharts
+- Lucide React
+- React Icons
+
+---
+
+## Deployed Link  -> [Link](https://resume-analyzer-ftfs.vercel.app/) ⭐
+
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Neel-max-cpu/Resume-Analyzer.git
+```
+
+Install dependencies for both backend and frontend
+
+```bash
+npm install
+```
+
+Create a `.env`
+
+```env
+NEXT_PUBLIC_API_URL=
+```
+```env
+GEMINI_API_KEY=
+```
+
+Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Skill Gap Analysis
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Resume parsing
+- JD parsing
+- Skill normalization
+- Match %
+- Important skill highlighting
+- AI suggestions
 
-## Deploy on Vercel
+### Candidate Verdict
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Overall recommendation
+- Candidate badge
+- Profile context
+- Key insights
+- Match breakdown
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
