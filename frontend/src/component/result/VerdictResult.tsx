@@ -28,10 +28,10 @@ const VerdictResult = () => {
   // console.log("data", data);
 
   useEffect(() => {
-    if (!result) {
+    if (!data) {
       router.replace("/");
     }
-  }, [result]);
+  }, [data]);
 
   const verdict = data?.verdict;
   const badge = data?.badge;
@@ -171,7 +171,7 @@ const VerdictResult = () => {
               <FileChartColumnIncreasing className="text-blue-500 w-6 h-6" strokeWidth={3} />
               <p className="text-slate-700 font-semibold text-2xl">Key Insights</p>
             </div>
-            <div className="flex flex-col gap-y-3 max-h-[340px] overflow-y-auto pr-1">
+            <div className="flex flex-col gap-y-3 max-h-85 overflow-y-auto pr-1">
               {/* {insights.map(({ id, icon: Icon, rowBg, iconBg, iconColor, title, desc }) => (
                 <div key={id} className={`grid grid-cols-[auto_1fr] gap-x-3 items-start p-4 rounded-lg ${rowBg}`}>                  
                   <div className={`rounded-full p-2 ${iconBg}`}>
@@ -221,7 +221,7 @@ const VerdictResult = () => {
             <div className="p-3 flex flex-col w-full">
               <h1 className="text-gray-600 font-semibold">MATCH BREAKDOWN</h1>
               {/* % loading */}
-              <div className="flex flex-col gap-y-5 mt-2 max-h-[220px] overflow-y-auto pr-1 bg-white">
+              <div className="flex flex-col gap-y-5 mt-2 max-h-55 overflow-y-auto pr-1 bg-white">
                 {/* {fitPercent.map(({ id, color, title, percentage }) => (
                   <div key={id}>
                     <div className="flex items-center justify-between mb-2">
