@@ -3,7 +3,7 @@ import { matchingSkill, missingSkill, shortInfo } from '@/data/info'
 import React, { useEffect } from 'react'
 import { IoMdArrowBack } from 'react-icons/io'
 import DonutChart from '../charts/DonutChart'
-import { MdVerified } from 'react-icons/md'
+import { MdClose, MdVerified, MdWarning } from 'react-icons/md'
 import { CircleCheck, CircleX, FileText, Star } from 'lucide-react'
 import { FaExclamation } from 'react-icons/fa'
 import { useRouter } from 'next/navigation';
@@ -45,7 +45,26 @@ const SkillGapResult = () => {
       : Number(percentage) >= 50
         ? "Potential Match"
         : "Not Qualified";
-  
+
+  const verdictConfig =
+    Number(percentage) >= 80
+      ? {
+        bg: "bg-[#e5f4f0]",
+        text: "text-[#009668]",
+        icon: <MdVerified />,
+      }
+      : Number(percentage) >= 50
+        ? {
+          bg: "bg-[#FFF8E1]",
+          text: "text-[#F59E0B]",
+          icon: <MdWarning />,
+        }
+        : {
+          bg: "bg-[#FEECEC]",
+          text: "text-[#DC2626]",
+          icon: <CircleX />,
+        };
+
   const dispatch = useDispatch<AppDispatch>();
   const toHome = () => {
     dispatch(setResumeName(""));
@@ -120,8 +139,9 @@ const SkillGapResult = () => {
         <div className="flex flex-col p-5 max-w-150 items-center justify-center gap-y-10 bg-white rounded-lg border border-gray-300">
           <h1 className="text-xl text-slate-700">Overall Match</h1>
           <DonutChart percentage={percentage} />
-          <div className="rounded-xl bg-[#e5f4f0] flex items-center justify-center p-3 text-[#009668] gap-x-2">
-            <MdVerified className="" />
+          <div className={`rounded-xl flex items-center justify-center p-3 ${verdictConfig.bg} ${verdictConfig.text} gap-x-2`}>
+            {/* <MdVerified className="" /> */}
+            {verdictConfig.icon}
             <span className="">{verdict}</span>
           </div>
           <div className="p-3">

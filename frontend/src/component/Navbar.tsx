@@ -31,7 +31,7 @@ const Navbar = () => {
                 : ""
             }
           >
-            Assignment 1
+            Skill Match
           </h1>
           <h1
             className={
@@ -39,7 +39,7 @@ const Navbar = () => {
                 ? "text-blue-500 underline underline-offset-4"
                 : ""
             }
-          >Assignment 2</h1>
+          >Candidate Verdict</h1>
         </div>
       </div>
     </header>

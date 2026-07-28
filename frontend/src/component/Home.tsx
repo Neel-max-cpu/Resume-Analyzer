@@ -51,7 +51,7 @@ const Home = () => {
             anlysePdf(file, jobDescription, mode),
             {
                 loading: "Analyzing...",
-                success: "Completed!",                
+                success: "Completed!",
                 error: (err) => err?.message || "Upload failed. Please try again.",
             }
         )
@@ -142,22 +142,26 @@ const Home = () => {
                             disabled={loading}
                             onClick={() => dispatch(setMode("skill-gap"))}
                             className={`px-4 py-2 rounded-lg transition hover:cursor-pointer hover:bg-white
+                            disabled:hover:bg-transparent
+                            disabled:cursor-not-allowed
                                 ${mode === "skill-gap" ?
                                     "bg-white text-blue-500" : ""}
                             `}
                         >
-                            Assignment 1: Skill Match
+                            Skill Match
                         </button>
                         {/* button 2 - assignment2 */}
                         <button
                             disabled={loading}
                             onClick={() => dispatch(setMode("verdict"))}
                             className={`px-4 py-2 rounded-lg transition hover:cursor-pointer hover:bg-white
+                            disabled:hover:bg-transparent
+                            disabled:cursor-not-allowed
                                 ${mode === "verdict" ?
                                     "bg-white text-blue-500" : ""}
                             `}
                         >
-                            Assignment 2: Candidate Verdict
+                            Candidate Verdict
                         </button>
                     </div>
                 </div>

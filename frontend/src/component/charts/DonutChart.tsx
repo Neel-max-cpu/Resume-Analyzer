@@ -21,6 +21,14 @@ interface Props {
 }
 
 const DonutChart = ({ percentage }: Props) => {
+
+    const verdict =
+        Number(percentage) >= 80
+            ? "High Fit"
+            : Number(percentage) >= 50
+                ? "Worth Reviewing"
+                : "Below Threshold";
+
     const data = {
         datasets: [
             {
@@ -30,7 +38,7 @@ const DonutChart = ({ percentage }: Props) => {
                     "#d3e4fe",
                 ],
                 borderWidth: 0,
-                borderRadius: 10,                
+                borderRadius: 10,
             },
         ],
     };
@@ -57,7 +65,7 @@ const DonutChart = ({ percentage }: Props) => {
                 </h2>
 
                 <p className="text-sm text-slate-700 font-medium">
-                    High Fit
+                    {verdict}
                 </p>
             </div>
         </div>
